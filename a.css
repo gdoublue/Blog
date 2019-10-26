@@ -1,0 +1,157 @@
+@import url(b.css);;
+table{
+    border-collapse: collapse;
+}
+body{
+    background-color: #efefef;
+    margin-top: 0;
+    margin-left: unset;
+}
+h1{
+    text-align: left;
+    /*color: black;*/
+    margin:0px;padding: 0px;
+}
+.topNavBar .logo{
+    font-size: 24px;
+    font-family:"Arial Black";
+    padding-top: 3px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+.topNavBar .rs{
+    padding-left: 16px;
+    margin-right: 4px;
+    color: deeppink;
+}
+.topNavBar .card{
+    color: aliceblue;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.topNavBar{
+    padding-top: 12px;
+    padding-bottom: 20px;
+    padding-right: 16px;
+    padding-left: 0px;
+    position: fixed;
+    width: 100%;
+}
+.topNavBar>nav{
+    float: right;
+}
+.topNavBar>nav>ul{
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+.topNavBar>nav>ul>li{
+    float: left;
+    margin-right: 25px;
+}
+.topNavBar>nav>ul>li>a{
+    font-size:20px;
+    text-decoration: none;
+    color: white;
+    padding-top: 8px;
+    font-weight: bold;
+    border-bottom: transparent 3px solid;
+    display: block;
+}
+.topNavBar>nav>ul>li>a:hover{
+    border-bottom: chocolate 3px solid;
+}
+.banner{
+    height: 515px;
+    background-image: url("./img/dog.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0,0,0,0.5);
+}
+.userCard{
+    border: red 1px solid;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+.userCard .welcome{
+    background: #e6686a;
+    color: white;
+    display:inline-block;
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+}
+.userCard .welcome .triangle{
+    display: block;
+    border: 10px solid transparent;
+    border-left-color: #e6686a;
+    border-top-width: 0px;
+    position: absolute;
+    left: 3px;
+    top: 100%;
+}
+.userCard .picture{
+    float: left;
+}
+.userCard .text h1{
+     margin-top: 18px;
+
+ }
+.userCard .text hr{
+    margin: 20px 0px;
+
+}
+.userCard .text{
+    float: left;
+    margin-left: 60px;
+    width: 520px;
+}
+.userCard .picAndText{
+    padding:50px;
+}
+.text dl>dt, .text dl>dd{
+    float: left;
+    padding: 5px 0px ;
+    margin: 0;
+    border:0;
+}
+.userCard dl>dt{
+
+    font-weight: bold;
+    width:30%;
+    padding:0;
+}
+.userCard dl>dd{
+    width:70%;
+    color: #9da0a7;
+
+}
+.userCard>footer.media{
+    background: #e6686a;
+    text-align: center;
+}
+.userCard svg{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    margin: 5px;
+    fill: white;
+    vertical-align: center;
+}
+.userCard svg:hover{
+
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #cf4d51;
+}

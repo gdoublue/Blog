@@ -12,3 +12,14 @@ iframe 的 name 和 a、form 的 target 联合用；
 	<tfoot></tfoot>
 </table>
 //tfoot 放在前面，浏览器会自动调整展示顺序；
+
+<!-- 1026 Saturday -->
+
+div 高度 由内部文档流元素的高度总和决定；
+文档流：文档内元素的流动方向；
+
+<span>不能用宽高限定</span>
+
+如何用css 画三角形？
+关键词：css tricks shape
+https://css-tricks.com/the-shapes-of-css/
