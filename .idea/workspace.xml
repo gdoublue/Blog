@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="101774f1-53a9-4178-9ef7-1cbaf90c9fd4" name="Default Changelist" comment="" />
+    <list default="true" id="101774f1-53a9-4178-9ef7-1cbaf90c9fd4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/.idea/canvas画板.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/canvas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/canvas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas画板/canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/taiji.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/taiji.html" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572143610881</updated>
       <workItem from="1572143612923" duration="18010000" />
+      <workItem from="1572337984063" duration="57000" />
     </task>
     <servers />
   </component>
@@ -68,7 +83,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
