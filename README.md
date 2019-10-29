@@ -23,3 +23,17 @@ div 高度 由内部文档流元素的高度总和决定；
 如何用css 画三角形？
 关键词：css tricks shape
 https://css-tricks.com/the-shapes-of-css/
+
+<!-- 1027 -->
+transition: box-shadow 0.5s;//过渡
+
+ 使用   box-sizing: border-box;
+ width: 48% 就包含边框了
+
+
+ <!-- 1028 -->
+ css gradient generator   
+ css  渐变 生成器
+
+ 下载壁纸：wallhaven.cc
+ 上传图片 sm.ms

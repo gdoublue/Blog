@@ -1,0 +1,60 @@
+body{
+    background: #8fa584;
+}
+#taiji {
+    width: 96px;
+    box-sizing: content-box;
+    height: 48px;
+    background: #eee;
+    border-color: #1b051a;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 100%;
+    position: relative;
+    margin: auto;
+
+}
+#taiji:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #eee;
+    border: 17px solid #1b051a;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+#taiji:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #1b051a;
+    border: 17px solid #eee;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+#taiji{
+    animation-duration: 5s;
+    animation-name:rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
