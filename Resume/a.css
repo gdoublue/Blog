@@ -12,6 +12,10 @@ h1{
     /*color: black;*/
     margin:0px;padding: 0px;
 }
+ol,ul{
+    list-style: none;
+}
+
 .topNavBar .logo{
     font-size: 24px;
     font-family:"Arial Black";
@@ -25,7 +29,7 @@ h1{
     color: deeppink;
 }
 .topNavBar .card{
-    color: aliceblue;
+    color: rgba(163, 175, 173, 0.98);
 }
 .clearfix:after {
     visibility: hidden;
@@ -42,6 +46,14 @@ h1{
     padding-left: 0px;
     position: fixed;
     width: 100%;
+    transition: all 1s;
+    color:#b7b7b7;
+}
+.topNavBar.sticky{
+    background-color: white;
+    padding:10px 0;z-index: 1;
+    box-shadow: 0 0px 5px rgba(207, 77, 81, 0.3);
+    color: black;
 }
 .topNavBar>nav{
     float: right;
@@ -54,19 +66,63 @@ h1{
 .topNavBar>nav>ul>li{
     float: left;
     margin-right: 25px;
+    position: relative;
 }
 .topNavBar>nav>ul>li>a{
     font-size:20px;
     text-decoration: none;
-    color: white;
+    color: inherit;
     padding-top: 8px;
     padding-bottom: 5px;
     font-weight: bold;
     border-bottom: transparent 3px solid;
     display: block;
+    position: relative;
 }
-.topNavBar>nav>ul>li>a:hover{
-    border-bottom: chocolate 3px solid;
+.topNavBar>nav>ul>li:hover>a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:100% ; left: 0;
+    width: 100%;
+    background-color: #e6686a;
+    height: 3px;
+    animation: listSlide .3s;
+    /*border-bottom: chocolate 3px solid;*/
+
+}
+@keyframes listSlide {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.topNavBar .submenu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    color: #3d4451;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+nav>ul>li.active> .submenu{
+    display: block;
+    animation: submenuSlide .3s;
+}
+@keyframes submenuSlide{
+    0%{
+        margin-right: 100%;
+    }
+    100%{
+        margin-right: 0%;
+    }
+}
+.topNavBar .submenu > li{
+    white-space: nowrap;  //不允许换行
+    padding: 5px 10px;
 }
 .banner{
     height: 515px;

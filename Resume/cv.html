@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8" content="initial-scale=1, maximum-scale=1">
     <title>个人简历</title>
     <link rel="stylesheet" href="./a.css">
     <script src="//at.alicdn.com/t/font_1478147_yitqpjr6pnr.js"></script>
+    <script src="./cv.js"></script>
     <style type="text/css">
         .icon {
             width: 1em; height: 1em;
@@ -16,31 +17,42 @@
 </head>
 <body>
 
-<div class="topNavBar clearfix">
+<div class="topNavBar clearfix " id="topNavBar">
     <a class="logo" href="http://qq.com"><span class="rs">MY</span><span class="card">card</span></a>
- <nav>
-    <ul   class="clearfix">
+ <nav class="menu">
+    <ul   class="clearfix" id="menuTigger">
 
         <li>
-            <a href="#">ABOUT</a>
+            <a href="#siteAbout">关于</a>
         </li>
         <li >
-            <a href="#">SKILLS</a>
+            <a href="#siteSkills">技能</a>
+        </li>
+
+        <li>
+            <a href="#siteWorks">作品</a>
+            <ul class="submenu">
+                <li>作品1</li>
+                <li>作品2</li>
+                <li>作品3</li>
+            </ul>
         </li>
         <li>
-            <a href="#">Education</a>
+            <a href="#">博客</a>
+            <ul class="submenu">
+                <li>博客1</li>
+                <li>博客2</li>
+                <li>博客3</li>
+            </ul>
+        </li>
+        <li>
+        <a href="#">教育</a>
         </li>
         <li >
-            <a href="#">PRICING</a>
+            <a href="#">联系方式</a>
         </li>
         <li >
-            <a href="#">BLOG</a>
-        </li>
-        <li >
-            <a href="#">CONTACT</a>
-        </li>
-        <li >
-            <a href="#">CALENDAR</a>
+            <a href="#">其他</a>
         </li>
     </ul>
  </nav>
@@ -51,7 +63,7 @@
     </div>
 </div>
 <main>
-    <div class="userCard">
+    <div class="userCard" id="siteAbout">
         <div class="picAndText clearfix">
             <div class="picture">
                 <img src="./img/ironman.jpg"  width="299" height="347" alt="头像">
@@ -111,7 +123,7 @@
     </p>
 
 </main>
-<section class="skills">
+<section class="skills" id="siteSkills">
     <h2>技能</h2>
     <ol class="clearfix">
         <li>
@@ -160,7 +172,7 @@
     </li>
     </ol>
 </section>
-<section class="portfolio">
+<section class="portfolio" id="siteWorks">
     <h2>作品集</h2>
     <nav>
         <ol class="clearfix">
@@ -198,6 +210,37 @@
         </div>
     </div>
 </section>
+<script>
+    let liTags = document.querySelectorAll('.topNavBar>nav>ul>li')
+    for (let i = 0; i < liTags.length; i++) {
+        liTags[i].onmouseenter = function (x5) {
+            x5.currentTarget.classList.add('active')
+        }
+        liTags[i].onmouseleave = function (x6) {
+            x6.currentTarget.classList.remove('active')
+        }
+    }
+    let aTags = document.querySelectorAll('.topNavBar>nav>ul>li>a')
+    for (let i = 0; i < aTags.length; i++) {
+        aTags[i].onclick = function (x5) {
+            x5.currentTarget.classList.add('active')
+            x5.preventDefault()
+            let a = x5.currentTarget
+            let href = a.getAttribute('href')
+            if(href==="#"){
+                console.log('无效定位')
+            }else{
+                let element = document.querySelector(href)
+                let top = element.offsetTop
+                window.scrollTo(0 , top-80)
+            }
 
+
+        }
+
+    }
+
+
+</script>
 </body>
 </html>

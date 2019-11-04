@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        .images{
+            display: flex;
+            align-items: flex-start;
+            transition:  all 0.5s;
+
+        }
+        .images>img{
+            vertical-align: top;
+            white-space: nowrap; /*文字不允许换行*/
+
+        }
+        .wondow{
+            text-align: center;
+            margin: 0 auto;
+            width: 800px;
+            overflow: hidden;
+        }
+        .bt{
+            text-align: center;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+ <div class="wondow">
+   <div class="images" id="images">
+       <img src="https://i.loli.net/2019/11/04/reTQf2LoGbUxngk.jpg" alt="图片1" height="450">
+       <img src="       https://i.loli.net/2019/11/04/tmATrbkLZxfPKDS.jpg
+" alt="图片3" height="450">
+       <img src="https://i.loli.net/2019/11/04/4j1Sixf2CYu85sz.jpg
+" alt="图片4" height="450">
+       <img src="https://i.loli.net/2019/11/04/g8vW7sCzDUGctKf.jpg
+" alt="图片2" height="450">
+
+
+   </div>
+ </div>
+ <div class="bt">
+     <span id="buttons">
+           <span>1</span><span>2</span><span>3</span><span>4</span>
+     </span>
+ </div>
+
+</body>
+<script src="atp.js">
+
+</script>
+</html>

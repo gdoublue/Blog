@@ -37,3 +37,21 @@ transition: box-shadow 0.5s;//过渡
 
  下载壁纸：wallhaven.cc
  上传图片 sm.ms
+ cursor: pointer; /*光标 点击*/
+localStorage.setItem('zzz', JSON.stringify(hash))
+已json格式 存储到本地浏览器缓存，下次刷新后用
+JSON.parse(localStorage.getItem(name) || 'null'
+覆盖初始值；这样就能保存用户的设置了！
+
+previousSibling  //捕获前一个标签
+
+<a name="boolean"></a>
+### boolean型
+1.变量没有值 -undefined
+2.有object，先不想赋值， -null；
+有一个非object， 赋值 -undefined
+ Boolean()  ！！0 /''  false
+
+ <!-- 10.31 -->
+ preventDefault()
+ 阻止元素发生默认的行为(例如去除a标签的链接功能)
