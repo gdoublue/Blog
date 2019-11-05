@@ -1,0 +1,18 @@
+
+.window{
+    width: 960px;
+    height: 600px;
+    margin:20px auto;
+    overflow: hidden;
+}
+.images >  img{
+    height: 600px;width: 960px;
+}
+.images{
+    display: flex;
+    transition: all 1s;
+
+}
+.images>img{
+    width: 100%;
+}
