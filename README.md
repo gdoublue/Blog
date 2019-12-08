@@ -15,6 +15,10 @@ iframe 的 name 和 a、form 的 target 联合用；
 
 <!-- 1026 Saturday -->
 
+---
+
+
+
 div 高度 由内部文档流元素的高度总和决定；
 文档流：文档内元素的流动方向；
 
@@ -55,3 +59,28 @@ previousSibling  //捕获前一个标签
  <!-- 10.31 -->
  preventDefault()
  阻止元素发生默认的行为(例如去除a标签的链接功能)
+
+---
+
+```css
+background-image: url("./img/loading.png");
+background-size: 100% 100%; /**图片大小自适应*/
+
+ /* for Chrome 隐藏滚动条，但可以滚动 */
+.inner-container::-webkit-scrollbar {
+    display: none;
+}
+```
+
+meta:vp +[^tab]
+
+git commit --amend  <!--两次commit 注释合并-->
+
+---
+
+### 1129
+
+使用 then ，完成后再执行，不然会出错
+
+- css  background-size：cover;   不拉升适应覆盖
+

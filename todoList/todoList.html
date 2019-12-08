@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待办项</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<header>
+    <section>
+        <form action="javascript:postaction()" id="form">
+            <label for="title">ToDoList</label>
+            <input type="text" id="title" name="title" placeholder="添加待办项" required="required" autocomplete="off">
+        </form>
+    </section>
+</header>
+<section>
+    <h2 onclick="save()">正在进行 <span id="todocount">0</span></h2>
+    <ol id="todolist" class="demo-box"></ol>
+    <h2>已经完成 <span id="donecount">0</span></h2>
+    <ul id="donelist"></ul>
+</section>
+<footer>
+    Copyright © 2019 jayhui.cn <a href="javascript:clear();">清空所有事项</a>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/todoList.js"></script>
+
+</body>
+</html>
