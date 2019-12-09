@@ -47,6 +47,27 @@
         load()
 
     })
+    $('ol,ul').on('dblclick','p',function () {
+        let data = getData()
+        let index=$(this).siblings('a').attr('id')
+        let predata=data[index].title
+        $(this).html('<input  type="text"/>')
+        let input= $(this).find('input')
+        input.val(predata)
+        input.select()
+        input.blur(function () {
+            data[index].title=input.val()
+            setData(data)
+            $(this).parent().html(input.val())
+
+        })
+       input.keydown(function(e) {
+            if (e.keyCode === 13) {
+                // 手动调用表单失去焦点事件  不需要鼠标离开操作
+                $(this).blur();
+            }
+        })
+    })
     $('ol,ul').on('click','input',function () {
         let data = getData()
         let index=$(this).siblings('a').attr('id')
